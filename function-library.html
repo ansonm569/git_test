@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Function library example</title>
+  <style>
+    input {
+      font-size: 2em;
+      margin: 10px 1px 0;
+    }
+  </style>
+  </head>
+<body>
+
+  <!-- <input class="numberInput" type="text"> -->
+  <!-- <input class="ageInput" type="number"> -->
+  <input class="numberImput" type="number">
+  <p></p>
+
+  <script>
+    // const input = document.querySelector('.numberInput');
+    const para = document.querySelector('p');
+    const age = document.querySelector('.ageInput');
+
+    // function squared(num) {
+    //     return num * num;
+    // }
+
+    // function cubed(num) {
+    //     return num * num * num;
+    // }
+
+    // function factorial(num) {
+    //     if (num < 0 ) return undefined;
+    //     if (num === 0) return 1;
+    //     let x = num - 1;
+    //     while (x > 1) {
+    //         num *= x;
+    //         x--;
+    //     }
+    //     return num;
+    // }
+
+    // function areaOfCircleWithRadius(num) {
+    //     let number = ((squared(num) * Math.PI));
+    //     let number2 = number.toFixed(2);
+    //     return number2;
+    // }
+
+    // input.addEventListener("change", () => {
+    //     const num = parseFloat(input.value);
+    //     if (isNaN(num)) {
+    //         para.textContent = "You need to enter a number.";
+    //     }
+    //     else {
+    //         para.textContent = `${num} squared is ${squared(num)}. \n`;
+    //         para.textContent += `${num} cubed is ${cubed(num)}. \n`;
+    //         para.textContent += `${num} factorial is ${factorial(num)}. \n`;
+    //         para.textContent += `A circle with a radius of ${num} has an area of ${areaOfCircleWithRadius(num)}. \n`;
+    //     }
+    // })
+
+    // function checkAge1(age) {
+    // if (age > 18) {
+    //     return true;
+    // } else {
+    //     return confirm('Did parents allow you?');
+    // }
+    // }
+
+    // function checkAge3(age) {
+    //     return (age > 18) || confirm('Did parents allow you?');
+    // }   
+    // function checkAge2(age) {
+    //     return (age > 18) ? true : confirm('Did parents allow you?');
+    // }
+
+    // age.addEventListener("change", checkAge3);
+
+    // function returnMin(a, b) {
+    //     return (a < b) ? a : b;
+    // }
+
+
+    let x = prompt("x?", '');
+    let n = prompt("n?", '');
+
+    if (n>1) {
+        alert (pow(x,n));
+    }
+    else {
+        alert("Number must be an integer greater than 1");
+    }
+
+    function pow(x,n) {
+            let num = x;
+            for (i = 1; i < n; i++) {
+                num = num * x;  
+            }
+            return num;
+    }
+
+
+  </script>
+</body>
+</html>
